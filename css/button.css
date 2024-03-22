@@ -1,0 +1,18 @@
+.button {
+    margin: 2em 0;
+    padding: 1em 3em;
+    border-style: none;
+    border-bottom: 0 solid;
+    border-radius: 0.3em;
+    width: 100%;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    text-transform: uppercase;
+
+    font-weight: 500;
+    font-size: 1em;
+
+    transition: 0.2s;
+}
+.button:hover {
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+}
