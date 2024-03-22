@@ -238,8 +238,38 @@
 
   <body>
     <!-- Main wrapper for the calendar application -->
+    <div class="wrapper">
       <div class="container-calendar">
-        
+        <div id="left">
+          <h1>Dynamic Calendar</h1>
+          <div id="event-section">
+            <h3>Add Event</h3>
+            <input type="date" id="eventDate">
+            <input type="text"
+              id="eventTitle"
+              placeholder="Event Title">
+            <input type="text"
+              id="eventDescription"
+              placeholder="Event Description">
+            <button id="addEvent" onclick="addEvent()">
+              Add
+            </button>
+          </div>
+          <div id="reminder-section">
+            <h3>Reminders</h3>
+            <!-- List to display reminders -->
+            <ul id="reminderList">
+              <li data-event-id="1">
+                <strong>Event Title</strong>
+                - Event Description on Event Date
+                <button class="delete-event"
+                  onclick="deleteEvent(1)">
+                  Delete
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div id="right">
           <h3 id="monthAndYear"></h3>
           <div class="button-container-calendar">
@@ -281,6 +311,7 @@
           </div>
         </div>
       </div>
+    </div>
     <!-- Include the JavaScript file for the calendar functionality -->
     <script>// script.js
 
