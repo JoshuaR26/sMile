@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/register.css">
     <link rel="stylesheet" href="/css/button.css">
 
-    <title>Login</title>
+    <title>Register</title>
 
     <style>
         * {
@@ -19,12 +19,17 @@
 </head>
 <body>
     <div class="parent-container">
-        <div class="login-image">
-            <img src="">
-        </div>
-        <div class="login-container">
-            <h1>Login</h1>
+        <div class="register-container">
+            <h1>Get Started</h1>
             <form action="">
+                <div class="name">
+                    <label for="fname">First Name</label>
+                    <input class="text" type="text" id="fname" name="fname">
+                    <label for="lname">Last Name</label>
+                    <input class="text" type="text" id="lname" name="lname">
+                    <br><br>
+                </div>
+
                 <label for="email">E-mail</label><br>
                 <input class="text" type="email" id="email" name="email">
                 <br><br>
@@ -33,12 +38,15 @@
                 <br>
                 <input class="button" type="submit">
             </form>
-            <div class="register">
+            <div class="login-link">
                 <p>
                     Don't have an account?
                     <a href="">Sign Up</a>
                 </p>
             </div>
+        </div>
+        <div class="register-image">
+            <img src="">
         </div>
     </div>
 

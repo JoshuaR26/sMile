@@ -1,0 +1,37 @@
+.parent-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+.register-image {
+    background-color: beige;
+    
+}
+.register-container {
+    background-color: white;
+    padding: 3em;
+    height: 100vh;
+    width: auto;
+}
+.register-container h1{
+    font-size: 3em;
+    margin: 1em 0;
+}
+.register-container .name {
+    display: flex;
+    margin-bottom: 2em ;
+}
+.register-container .name input {
+    /* width: 2em; */
+}
+.register-container input.text{
+    border-style: none;
+    border-bottom: solid .1em black;
+    padding: 0.5em;
+    width: 100%;
+}
+.register-container input:focus {
+    outline: none;
+}
