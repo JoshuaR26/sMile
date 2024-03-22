@@ -6,7 +6,7 @@
   
     --smokey-black: hsl(0, 0%, 7%);
     --eerie-black: hsl(0, 0%, 9%);
-    --radical-red: hsl(346, 100%, 58%);
+    --radical-red: #ff295b;
     --white_a9: hsla(0, 0%, 100%, 0.09);
     --white_a15: hsla(0, 0%, 100%, 0.15);
     --white_a25: hsla(0, 0%, 100%, 0.25);
@@ -325,7 +325,6 @@
   }
   
   .header.active {
-    background-color: var(--eerie-black);
     padding-block: 12px;
     box-shadow: var(--shadow);
   }
@@ -341,7 +340,7 @@
     position: fixed;
     top: 0;
     right: -280px;
-    background-color: var(--eerie-black);
+    /* background-color: var(--eerie-black); */
     height: 100vh;
     max-width: 280px;
     width: 100%;
@@ -377,7 +376,7 @@
   
   .nav-close-btn .two { transform: rotate(-45deg); }
   
-  .nav-close-btn:is(:hover, :focus-visible) .span { background-color: var(--radical-red); }
+  /* .nav-close-btn:is(:hover, :focus-visible) .span { background-color: var(--radical-red); } */
   
   .navbar-list {
     text-align: center;
@@ -392,7 +391,7 @@
     transition: var(--transition-1);
   }
   
-  .navbar-link:is(:hover, :focus-visible) { color: var(--radical-red); }
+  /* .navbar-link:is(:hover, :focus-visible) { color: var(--radical-red); } */
   
   .login-btn {
     display: flex;
@@ -424,7 +423,7 @@
   }
   
   .navbar .contact-link {
-    color: var(--radical-red);
+      color: var(--radical-red);
     font-size: var(--fs-6);
     font-weight: var(--fw-400);
   }

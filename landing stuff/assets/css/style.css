@@ -22,17 +22,17 @@
   --black: hsl(0, 0%, 0%); */
 
   --smokey-black: #fff1bf;
-  --eerie-black: #d45d5d;
-  --radical-red: hsl(346, 100%, 58%);
+  --eerie-black: #fff1bf;
+  --radical-red: #fff1bf;
   --white_a9: hsla(0, 0%, 4%, 0.09);
-  --white_a15: hsla(0, 1%, 32%, 0.15);
-  --white_a25: hsla(0, 0%, 29%, 0.25);
-  --white_a50: hsla(0, 0%, 11%, 0.5);
+  --white_a15: hsla(0, 0%, 0%, 0.15);
+  --white_a25: hsla(0, 0%, 0%, 0.25);
+  --white_a50: hsla(0, 0%, 0%, 0.5);
   --white_a70: hsla(0, 0%, 0%, 0.7);
-  --white_a75: hsla(0, 0%, 13%, 0.75);
+  --white_a75: hsla(0, 0%, 0%, 0.75);
   --white_a80: hsla(0, 0%, 11%, 0.8);
-  --jet-1: hsl(0, 0%, 20%);
-  --jet-2: hsl(0, 0%, 16%);
+  --jet-1: hsl(0, 0%, 0%);
+  --jet-2: hsl(0, 0%, 0%);
   --white: #fb7a24;
   --black: hsl(0, 0%, 0%);
 
