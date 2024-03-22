@@ -182,6 +182,7 @@ body.active { overflow: hidden; }
 .button:hover {
   box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
   background-color: #f85d45;
+  padding: 1.2em 3.2em;
 }
 
 /*-----------------------------------*\
