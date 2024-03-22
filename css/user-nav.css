@@ -24,6 +24,7 @@
   .navbar {
     position: fixed;
     background-color: #ff973c;
+        
     transition: width 0.3s ease;
   }
   

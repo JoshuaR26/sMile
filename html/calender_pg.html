@@ -7,285 +7,24 @@
     <meta name="viewport"
       content="width=device-width, 
       initial-scale=1.0">
-    <title>Dynamic Calendar</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <style>
-    /* styles.css */
+    <title>Calendar</title>
 
-    /* General styling for the entire page */
-    body {
-      font-family: Arial, sans-serif;
-      background-color: white;
-      margin: 0;
-    }
+      <!-- ? CSS CUSTOM SHEETS -->
+      <link rel="stylesheet" href="../css/button.css">
+      <link rel="stylesheet" href="../css/fonts.css">
+    
+    <link rel="stylesheet" href="../css/calendar.css">
+    
 
-    .wrapper {
-      max-width: 1100px;
-      margin: 15px auto;
-    }
-
-    /* Calendar container */
-    .container-calendar {
-      background: #ffffff;
-      padding: 15px;
-      max-width: 900px;
-      margin: 10%;
-      overflow: auto;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-      display: flex;
-      justify-content: space-between;
-      border-radius: 10px;
-    }
-
-    /* Event section styling */
-    #event-section {
-      padding: 10px;
-      background: #f5f5f5;
-      margin: 20px 0;
-      border: 1px solid #ccc;
-    }
-
-    .container-calendar #left h1 {
-      color: green;
-      text-align: center;
-      background-color: #f2f2f2;
-      margin: 0;
-      padding: 10px 0;
-    }
-
-    #event-section h3 {
-      color: green;
-      font-size: 18px;
-      margin: 0;
-    }
-
-    #event-section input[type="date"],
-    #event-section input[type="text"] {
-      margin: 10px 0;
-      padding: 5px;
-      width: 80%;
-    }
-
-    #event-section button {
-      background: green;
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-
-    .event-marker {
-      position: relative;
-    }
-
-    .event-marker::after {
-      content: '';
-      display: block;
-      width: 6px;
-      height: 6px;
-      background-color: red;
-      border-radius: 50%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-    }
-
-    /* event tooltip styling */
-    .event-tooltip {
-      position: absolute;
-      background-color: rgba(234, 232, 232, 0.763);
-      color: black;
-      padding: 10px;
-      border-radius: 4px;
-      bottom: 20px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: none;
-      transition: all 0.3s;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-      z-index: 1;
-    }
-
-    .event-marker:hover .event-tooltip {
-      display: block;
-    }
-
-    /* Reminder section styling */
-    #reminder-section {
-      padding: 10px;
-      background: #f5f5f5;
-      margin: 20px 0;
-      border: 1px solid #ccc;
-    }
-
-    #reminder-section h3 {
-      color: green;
-      font-size: 18px;
-      margin: 0;
-    }
-
-    #reminderList {
-      list-style: none;
-      padding: 0;
-    }
-
-    #reminderList li {
-      margin: 5px 0;
-      font-size: 16px;
-    }
-
-    /* Style for the delete buttons */
-    .delete-event {
-      background: rgb(237, 19, 19);
-      color: white;
-      border: none;
-      padding: 5px 10px;
-      cursor: pointer;
-      margin-left: 10px;
-      align-items: right;
-    }
-
-    /* Buttons in the calendar */
-    .button-container-calendar button {
-      cursor: pointer;
-      background: green;
-      color: #fff;
-      border: 1px solid green;
-      border-radius: 4px;
-      padding: 5px 10px;
-    }
-
-    /* Calendar table */
-    .table-calendar {
-      border-collapse: collapse;
-      width: 100%;
-    }
-
-    .table-calendar td,
-    .table-calendar th {
-      padding: 5px;
-      border: 1px solid #e2e2e2;
-      text-align: center;
-      vertical-align: top;
-    }
-
-    /* Date picker */
-    .date-picker.selected {
-      background-color: #f2f2f2;
-      font-weight: bold;
-      outline: 1px dashed #00BCD4;
-    }
-
-    .date-picker.selected span {
-      border-bottom: 2px solid currentColor;
-    }
-
-    /* Day-specific styling */
-    .date-picker:nth-child(1) {
-      color: red;
-      /* Sunday */
-    }
-
-    .date-picker:nth-child(6) {
-      color: green;
-      /* Friday */
-    }
-
-    /* Hover effect for date cells */
-    .date-picker:hover {
-      background-color: green;
-      color: white;
-      cursor: pointer;
-    }
-
-    /* Header for month and year */
-    #monthAndYear {
-      text-align: center;
-      margin-top: 0;
-    }
-
-    /* Navigation buttons */
-    .button-container-calendar {
-      position: relative;
-      margin-bottom: 1em;
-      overflow: hidden;
-      clear: both;
-    }
-
-    #previous {
-      float: left;
-    }
-
-    #next {
-      float: right;
-    }
-
-    /* Footer styling */
-    .footer-container-calendar {
-      margin-top: 1em;
-      border-top: 1px solid #dadada;
-      padding: 10px 0;
-    }
-
-    .footer-container-calendar select {
-      cursor: pointer;
-      background: #ffffff;
-      color: #585858;
-      border: 1px solid #bfc5c5;
-      border-radius: 3px;
-      padding: 5px 1em;
-    }
-
-    </style>
   </head>
 
   <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form>
-      </div>
-    </nav>
     <!-- Main wrapper for the calendar application -->
     <div class="wrapper">
       <div class="container-calendar">
         <div id="left">
-          <h1>Dynamic Calendar</h1>
+          <h2>Add Community Events!</h2>
           <div id="event-section">
-            <h3>Add Event</h3>
             <input type="date" id="eventDate">
             <input type="text"
               id="eventTitle"
@@ -293,23 +32,10 @@
             <input type="text"
               id="eventDescription"
               placeholder="Event Description">
-            <button id="addEvent" onclick="addEvent()">
+            <br>
+            <button class="button" id="addEvent" onclick="addEvent()">
               Add
             </button>
-          </div>
-          <div id="reminder-section">
-            <h3>Reminders</h3>
-            <!-- List to display reminders -->
-            <ul id="reminderList">
-              <li data-event-id="1">
-                <strong>Event Title</strong>
-                - Event Description on Event Date
-                <button class="delete-event"
-                  onclick="deleteEvent(1)">
-                  Delete
-                </button>
-              </li>
-            </ul>
           </div>
         </div>
         <div id="right">
@@ -353,6 +79,20 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="container" id="reminder-section">
+      <h2>Reminders</h2>
+      <!-- List to display reminders -->
+      <ul id="reminderList">
+        <li data-event-id="1">
+          <strong>Event Title</strong>
+          - Event Description on Event Date
+          <button class="delete-event"
+            onclick="deleteEvent(1)">
+            Delete
+          </button>
+        </li>
+      </ul>
     </div>
     <!-- Include the JavaScript file for the calendar functionality -->
     <script>// script.js
