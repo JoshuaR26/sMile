@@ -12,7 +12,7 @@
 .register-container {
     background-color: white;
     padding: 3em;
-    height: 100vh;
+    /* height: 100vh; */
     width: auto;
 }
 .register-container h1{
@@ -21,10 +21,21 @@
 }
 .register-container .name {
     display: flex;
-    margin-bottom: 2em ;
+}
+.register-container .name label {
+    display: inline-flex; 
+    position: relative;
+    margin-right: 0.5em;
+    top:1em;
 }
 .register-container .name input {
-    /* width: 2em; */
+    border-style: none;
+    border-bottom: solid .1em black;
+    padding: 0.5em;
+    /* margin-right: 2em; */
+}
+.register-container input {
+    margin-bottom: 2em;
 }
 .register-container input.text{
     border-style: none;
@@ -34,4 +45,12 @@
 }
 .register-container input:focus {
     outline: none;
+}
+.login-link {
+    margin: 1em;
+    text-align: center;
+}
+.login-link a {
+    text-decoration: none;
+    color: blue;
 }
