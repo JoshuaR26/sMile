@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            margin-bottom: 15px;
+        }
+        textarea {
+            resize: vertical;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        input[type="reset"] {
+            background-color: #ccc;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feedback Form</h1>
+    <form>
+        <label for="Organization name">Name of Organization:</label>
+        <input type="text" id="Organization name" name="Organization name" placeholder="Enter name here" required>
+        <label for="issue">Subject:</label>
+        <input type="issue" id="issue" name="issue" placeholder="Your Issue" required>
+        <label for="commentfield">Feedback:</label>
+        <textarea rows="6" cols="50" id="Feedback" name="Feedback"></textarea>
+        <input type="submit" value="Send Feedback">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
