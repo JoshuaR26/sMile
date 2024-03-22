@@ -48,6 +48,7 @@ body {
     border-style: none;
     box-shadow: 0 0 0.5em var(--shadow);
     background-color: white;
+    /* height: 100%; */
 }
 .column-1 {
     flex: 2;
@@ -55,6 +56,7 @@ body {
 }
 .column-2 {
     flex: 1;
+    /* height: auto; */
 }
 .column-1 #personal-info li{
     list-style: none;

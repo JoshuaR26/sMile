@@ -5,138 +5,237 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- ? CSS CUSTOM SHEETS -->
-    <link rel="stylesheet" href="/css/button.css">
-    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/fonts.css">
 
-    <link rel="stylesheet" href="/css/user-profile.css">
-    <link rel="stylesheet" href="/css/mini-calender.css">
+    <link rel="stylesheet" href="../css/user-profile.css">
+    <link rel="stylesheet" href="../css/mini-calender.css">
+    <link rel="stylesheet" href="../css/user-nav.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"/>
 
     <title>User</title>
     <style>
+        * {
+            margin: 0; padding:0;
+        }
         h2 {
             margin-bottom: 1.2em;
         }
     </style>
 </head>
 <body>
-    <div class="welcome-mssg">
-        <h1>
-            What's Up, 
-            <span>Username!</span>
-        </h1>
-    </div>
-    <div class="container" id="statbar">
-        <div class="stat" id="stat-1">
-            <span>
-                Smiley Points
-            </span>
-            <h3>1,005</h3>
-        </div>
+    <nav class="navbar">
+        <ul class="navbar-nav">
+          <li class="logo">
+            <a href="#" class="nav-link">
+              <span class="link-text logo-text">unityhub</span>
+              <svg
+                aria-hidden="true"
+                focusable="false"
+                data-prefix="fad"
+                data-icon="angle-double-right"
+                role="img"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                class="svg-inline--fa fa-angle-double-right fa-w-14 fa-5x"
+              > 
+                <g class="fa-group">
+                  <path
+                    fill="currentColor"
+                    d="M224 273L88.37 409a23.78 23.78 0 0 1-33.8 0L32 386.36a23.94 23.94 0 0 1 0-33.89l96.13-96.37L32 159.73a23.94 23.94 0 0 1 0-33.89l22.44-22.79a23.78 23.78 0 0 1 33.8 0L223.88 239a23.94 23.94 0 0 1 .1 34z"
+                    class="fa-secondary"
+                  ></path>
+                  <path
+                    fill="currentColor"
+                    d="M415.89 273L280.34 409a23.77 23.77 0 0 1-33.79 0L224 386.26a23.94 23.94 0 0 1 0-33.89L320.11 256l-96-96.47a23.94 23.94 0 0 1 0-33.89l22.52-22.59a23.77 23.77 0 0 1 33.79 0L416 239a24 24 0 0 1-.11 34z"
+                    class="fa-primary"
+                  ></path>
+                </g>
+              </svg>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                <g class="fa-group">
+                  <img src="/images/icons/house-solid.svg"/>
+                </g>
+              <span class="link-text">Home</span>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+                  <g class="fa-group">
+                      <img src="/images/icons/user-solid.svg"/>
+                    </g>
+                  <span class="link-text">Profile</span>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <g class="fa-group">
+                  <img src="/images/icons/earth-asia-solid.svg"/>
+                </g>
+              <span class="link-text">Organization</span>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <g class="fa-group">
+                  <img src="/images/icons/list-check-solid.svg"/>
+                </g>
+              <span class="link-text">Tasks</span>
+            </a>
+          </li>
+    
+          <li class="nav-item">
+              <a href="#" class="nav-link">
+                <g class="fa-group">
+                    <img src="/images/icons/money-bill-solid.svg"/>
+                  </g>
+                <span class="link-text">Payments</span>
+              </a>
+            </li>
+  
             
-        <div class="stat" id="stat-1">
-            <span>
-                Tasks Completed 
-            </span>
-            <h3>13</h3>
+  
+          <li class="nav-item" id="themeButton">
+            <a href="#" class="nav-link">
+                    <g class="fa-group">
+                        <img src="/images/icons/right-from-bracket-solid.svg"/>
+                      </g>
+              <span class="link-text">LOGOUT</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    
+      <main>
+        <div class="welcome-mssg">
+            <h1>
+                What's Up, 
+                <span>Username!</span>
+            </h1>
         </div>
-
-    </div>
-    <div class="parent-container">
-        <div class="column-1" id="column-1">
-            <div class="container" id="personal-info">
-                <h2>Your Personal Info</h2> 
-                <ul>
-                    <li>
-                        <p class="field">First Name</p>
-                        <p class="data">Joshua</p>
-                    </li>
-                    <li>
-                        <p class="field">last Name</p>
-                        <p class="data">Raju</p>
-                    </li>
-                    <li>
-                        <p class="field">email</p>
-                        <p class="data">
-                            joshua2009474@gmail.com
-                            <i class="fa fa-pencil"></i>
-                        </p>
-                    </li>
-                    <li>
-                        <p class="field">Phone Number</p>
-                        <p class="data">
-                            9930440108 
-                            <i class="fa fa-pencil"></i>
-                        </p>
-                    </li>
-                </ul>
-            </div>
-            <div class="container" id="about">
+        <div class="container" id="statbar">
+            <div class="stat" id="stat-1">
                 <span>
-                    <h2 style="display: flex; justify-content: space-between; align-items: center;">
-                        About Yourself
-                        <i class="fa fa-pencil"></i>
-                    </h2>
+                    Smiley Points
                 </span>
-                <!-- <textarea maxlength="100"></textarea> -->
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima molestias soluta voluptatibus iure? Molestias, corporis suscipit eum sed beatae, facilis eveniet impedit quas culpa reiciendis voluptatum. Officia, quidem suscipit!
-                    <br><br>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eum blanditiis perspiciatis consectetur pariatur ipsam. Perspiciatis quaerat suscipit ab officiis, porro alias maiores saepe perferendis et, nemo dolores tempora ducimus.
-                </p>
+                <h3>1,005</h3>
+            </div>
+                
+            <div class="stat" id="stat-1">
+                <span>
+                    Tasks Completed 
+                </span>
+                <h3>13</h3>
+            </div>
+    
+        </div>
+        <div class="parent-container">
+            <div class="column-1" id="column-1">
+                <div class="container" id="personal-info">
+                    <h2>Your Personal Info</h2> 
+                    <ul>
+                        <li>
+                            <p class="field">First Name</p>
+                            <p class="data">Joshua</p>
+                        </li>
+                        <li>
+                            <p class="field">last Name</p>
+                            <p class="data">Raju</p>
+                        </li>
+                        <li>
+                            <p class="field">email</p>
+                            <p class="data">
+                                joshua2009474@gmail.com
+                                <i class="fa fa-pencil"></i>
+                            </p>
+                        </li>
+                        <li>
+                            <p class="field">Phone Number</p>
+                            <p class="data">
+                                9930440108 
+                                <i class="fa fa-pencil"></i>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="container" id="about">
+                    <span>
+                        <h2 style="display: flex; justify-content: space-between; align-items: center;">
+                            About Yourself
+                            <i class="fa fa-pencil"></i>
+                        </h2>
+                    </span>
+                    <!-- <textarea maxlength="100"></textarea> -->
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima molestias soluta voluptatibus iure? Molestias, corporis suscipit eum sed beatae, facilis eveniet impedit quas culpa reiciendis voluptatum. Officia, quidem suscipit!
+                        <br><br>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eum blanditiis perspiciatis consectetur pariatur ipsam. Perspiciatis quaerat suscipit ab officiis, porro alias maiores saepe perferendis et, nemo dolores tempora ducimus.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="column-2" id="column-2">
+                <div class="container">
+                    <h2>Calendar</h2>
+                    <div class="container-calendar">
+                        <div id="right">
+                          <h3 id="monthAndYear"></h3>
+                          <div class="button-container-calendar">
+                            <button id="previous"
+                              onclick="previous()">
+                              ‹
+                            </button>
+                            <button id="next"
+                              onclick="next()">
+                              ›
+                            </button>
+                          </div>
+                          <table class="table-calendar"
+                            id="calendar"
+                            data-lang="en">
+                            <thead id="thead-month"></thead>
+                            <!-- Table body for displaying the calendar -->
+                            <tbody id="calendar-body"></tbody>
+                          </table>
+                          <div class="footer-container-calendar">
+                            <label for="month">Jump To: </label>
+                            <!-- Dropdowns to select a specific month and year -->
+                            <select id="month" onchange="jump()">
+                              <option value=0>Jan</option>
+                              <option value=1>Feb</option>
+                              <option value=2>Mar</option>
+                              <option value=3>Apr</option>
+                              <option value=4>May</option>
+                              <option value=5>Jun</option>
+                              <option value=6>Jul</option>
+                              <option value=7>Aug</option>
+                              <option value=8>Sep</option>
+                              <option value=9>Oct</option>
+                              <option value=10>Nov</option>
+                              <option value=11>Dec</option>
+                            </select>
+                            <!-- Dropdown to select a specific year -->
+                            <select id="year" onchange="jump()"></select>
+                          </div>
+                        </div>
+                      </div>
+                </div>
             </div>
         </div>
+      </main>
 
-        <div class="column-2" id="column-2">
-            <div class="container">
-                <h2>Calendar</h2>
-                <div class="container-calendar">
-                    <div id="right">
-                      <h3 id="monthAndYear"></h3>
-                      <div class="button-container-calendar">
-                        <button id="previous"
-                          onclick="previous()">
-                          ‹
-                        </button>
-                        <button id="next"
-                          onclick="next()">
-                          ›
-                        </button>
-                      </div>
-                      <table class="table-calendar"
-                        id="calendar"
-                        data-lang="en">
-                        <thead id="thead-month"></thead>
-                        <!-- Table body for displaying the calendar -->
-                        <tbody id="calendar-body"></tbody>
-                      </table>
-                      <div class="footer-container-calendar">
-                        <label for="month">Jump To: </label>
-                        <!-- Dropdowns to select a specific month and year -->
-                        <select id="month" onchange="jump()">
-                          <option value=0>Jan</option>
-                          <option value=1>Feb</option>
-                          <option value=2>Mar</option>
-                          <option value=3>Apr</option>
-                          <option value=4>May</option>
-                          <option value=5>Jun</option>
-                          <option value=6>Jul</option>
-                          <option value=7>Aug</option>
-                          <option value=8>Sep</option>
-                          <option value=9>Oct</option>
-                          <option value=10>Nov</option>
-                          <option value=11>Dec</option>
-                        </select>
-                        <!-- Dropdown to select a specific year -->
-                        <select id="year" onchange="jump()"></select>
-                      </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="/js/miniCalendar.js"></script>
+    <script src="../js/miniCalendar.js"></script>
+    <script src="../js/userNavTheme.js"></script>
 </body>
 </html>
