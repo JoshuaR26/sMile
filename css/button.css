@@ -5,7 +5,7 @@
     border-bottom: 0 solid;
     border-radius: 0.3em;
     width: 100%;
-    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.2);
     text-transform: capitalize;
 
     font-weight: 600;
@@ -15,5 +15,5 @@
     transition: 0.2s;
 }
 .button:hover {
-    box-shadow: 0 0 0.5em rgba(0,0,0,0.5);
+    box-shadow: 0 0 0.5em rgba(0,0,0,0.4);
 }

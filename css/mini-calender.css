@@ -5,11 +5,12 @@
     /* max-width: 1100px; */
     margin: 15px auto;
   }
-
+  
   /* Calendar container */
   .container-calendar {
+    font-size: 1.2em;
     /* background: #fff9e6; */
-    padding: 15px;
+    padding: ;
     /* max-width: 900px; */
     width: 17em;
     margin: 0 auto;
