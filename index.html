@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>VOLUNTEER</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- gsap -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+  <meta name="title" content="DNT">
+  <meta name="description" content="This is the official DNT website">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/DNT Logo Remastered White.png" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - custom font link
+  -->
+  <!-- <link rel="stylesheet" href="./assets/font/font.css"> -->
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/DNT Logo Remastered White.png">
+  <link rel="preload" as="image" href="./assets/images/loading-circle.svg">
+
+</head>
+
+<body class="active" id="top">
+
+  <!-- 
+    -#PRELOADING
+  -->
+
+  <div class="loading" data-loading>
+    <img src="./assets/images/loading.svg" width="55" height="55" alt="loading" class="img">
+    <img src="./assets/images/loading-circle.svg" width="70" height="70" alt="" class="circle">
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+  
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/DNT Logo Remastered White.png" width="80" height="80" alt="DNT">
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <img src="./assets/images/hamburger-solid.svg" width="17" height="17" alt="menu icon">
+      </button>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <!-- <a href="#" class="logo">
+            <img src="./assets/images/hamburger-solid.svg" width="140" height="40" alt="DNT Home" class="img" style="fill:#000 /* Your desired color */;">
+
+          </a> -->
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <span class="span one"></span>
+            <span class="span two"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#gallery" class="navbar-link" data-nav-link>Our SDG Goals</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link" data-nav-link>About</a>
+          </li>
+
+          <!-- <li class="navbar-item">
+            <a href="#services" class="navbar-link" data-nav-link>Services</a>
+          </li> -->
+
+          <li class="navbar-item">
+            <a href="#portfolio" class="navbar-link" data-nav-link>Meet the team</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link" data-nav-link>Contact us</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" id="home" aria-label="home">
+        <div class="container">
+
+          <img src="./assets/Untitled design.png" width="800" height="600" alt="" class="hero-banner">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Volunteer Organisations</h1>
+
+            <div class="wrapper h2">
+              
+              <strong class="strong" data-letter-effect>Connect</strong>
+              <strong class="strong" data-letter-effect>Learn</strong>
+              <strong class="strong" data-letter-effect>Contribute</strong>
+            </div>
+
+            <p class="hero-text">Be the change you want to see, learn while you connect</p>
+
+          </div>
+
+        </div>
+
+        <img src="./assets/images/design.png" width="450" height="625" loading="lazy"alt="" class="shape">
+
+      </section>
+
+
+
+
+
+      <!-- 
+        - #GALLERY
+      -->
+
+      <section class="section gallery" id="gallery">
+        <p class="section-subtitle container" id="service-lable">SDGs our Project focuses on</p>
+        <div class="container">
+
+          <ul class="gallery-list">
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/sdg_4.jpg" width="450" height="625" loading="lazy" alt="The Drunken"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 4</a>
+                  </h3>
+
+                  <span class="card-tag">Quality Education</span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal4" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/1.png" width="450" height="625" loading="lazy"
+                    alt="Lettuce Entertain" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 4</a>
+                  </h3>
+
+                  <span class="card-tag">Quality Education</span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal4" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/sdg_8.jpg" width="450" height="625" loading="lazy" alt="Leaping Lizard"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 8</a>
+                  </h3>
+
+                  <span class="card-tag">Decent Work and Economic Growth </span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal8" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/2.png" width="450" height="625" loading="lazy" alt="Juan More Taco"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 8</a>
+                  </h3>
+
+                  <span class="card-tag">Decent Work and Economic Growth</span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal8" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/sdg_9.jpg" width="450" height="625" loading="lazy" alt="Goldilox Bagels"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 9</a>
+                  </h3>
+
+                  <span class="card-tag">Industry, Innovation and Infrastructure</span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal9" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/3.png" width="450" height="625" loading="lazy" alt="Cookie Monstah"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 9</a>
+                  </h3>
+
+                  <span class="card-tag">Industry, Innovation and Infrastructure</span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal9" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+            <li class="gallery-item" data-reveal>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/sdg_17.jpg" width="450" height="625" loading="lazy"
+                    alt="Divine Pastabilities" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 17</a>
+                  </h3>
+
+                  <span class="card-tag">Partnership for the goals</span>
+                </div>
+
+                <a href="https://github.com/orgs/dreadnoughtrobotics/repositories" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+              <div class="gallery-card">
+
+                <figure class="card-banner img-holder has-before" style="--width: 450; --height: 625;">
+                  <img src="./assets/4.png" width="450" height="625" loading="lazy"
+                    alt="The Lockhart Bar" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h6">
+                    <a href="#" class="card-title">SDG 17</a>
+                  </h3>
+
+                  <span class="card-tag">Partnership for the goals</span>
+                </div>
+
+                <a href="https://sdgs.un.org/goals/goal17" class="btn-icon">
+                  <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy"
+                    alt="arrow-forward icon">
+                </a>
+
+              </div>
+
+            </li>
+
+          </ul>
+
+          <a href="#service" class="scroll-down">
+            <img src="./assets/images/scroll-down.svg" width="40" height="66" loading="lazy" alt="mouse scroll">
+          </a>
+
+          <img src="./assets/images/design.png" width="220" height="78" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CATEGORY
+      -->
+
+      <section class="section category" aria-label="photography category">
+        <div class="container">
+
+          <ul class="category-list">
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Connect,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/connect.jpg" width="600" height="690" loading="lazy" alt="Landscape"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Explore,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/explore.jpg" width="600" height="690" loading="lazy" alt="Model"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Enrich,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/enrich.jpg" width="600" height="690" loading="lazy" alt="Street"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Enhance,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/enhance.jpg" width="600" height="690" loading="lazy" alt="Product"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Amplify,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/amplify.jpg" width="600" height="690" loading="lazy" alt="Fashion"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Volunteer,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/volunteer.jpg" width="600" height="690" loading="lazy" alt="Film"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Love,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/love.jpg" width="600" height="690" loading="lazy" alt="Architecture"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+            <li class="category-item" data-reveal>
+              <a href="#" class="category-card">
+
+                <h3 class="h4 card-title">Assimilate,</h3>
+
+                <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                  <img src="./assets/accimilate.jpg" width="600" height="690" loading="lazy" alt="Event"
+                    class="img-cover">
+                </figure>
+
+              </a>
+            </li>
+
+              <li class="category-item" data-reveal>
+                <a href="#" class="category-card">
+
+                  <h3 class="h4 card-title">Authencity.</h3>
+
+                  <figure class="card-banner img-holder" style="--width: 600; --height: 690;">
+                    <img src="./assets/images/category-7.jpg" width="600" height="690" loading="lazy" alt="Event"
+                      class="img-cover">
+                  </figure>
+
+                </a>
+              </li>           
+
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about" id="about" aria-label="about me">
+        <div class="container">
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title" data-reveal="right">
+              Hi. we’re <br>
+              UnityHub
+            </h2>
+
+            <div class="wrapper has-before" data-reveal="right">
+
+              <p class="section-text">
+                When volunteering aligns and learning converge
+                <em class="em">magic</em>
+                happens. Our high performing crew is like a symphony of
+                <em class="em">precision</em>
+                and creativity.
+              </p>
+
+              
+
+            </div>
+
+          </div>
+
+          <figure class="about-banner" data-reveal="left">
+
+            <div class="img-holder has-before" style="--width: 512; --height: 684;">
+              <img src="./assets/DNT Logo Remastered White.png" width="512" height="684" loading="lazy" alt="Riachard Ryan"
+                class="img-cover">
+            </div>
+
+           
+
+            <img src="./assets/images/design.png" width="659" height="653" loading="lazy" alt=""
+              class="shape shape-2">
+
+          </figure>
+
+          <img src="./assets/images/design.png" width="239" height="232" loading="lazy" alt=""
+            class="shape shape-3">
+
+        </div>
+      </section>
+
+
+
+
+      
+
+
+
+
+
+      <!-- 
+        - #PORTFOLIO
+      -->
+
+      <section class="section portfolio" id="portfolio" aria-labelledby="portfolio-label">
+        <div class="container">
+
+          <div class="portfolio-list">
+
+            <div class="wrapper">
+
+              <h2 class="h2 section-title" id="portfolio-label" data-reveal>Meet the team</h2>
+
+              <div class="portfolio-card" data-reveal>
+
+                <figure class="card-banner img-holder has-before" style="--width: 700; --height: 605;">
+                  <img src="./assets/joshua.jpg" width="700" height="605" loading="lazy" alt="Shoe Promo"
+                    class="img-cover">
+                </figure>
+
+                <div class="card-content">
+                  <h3 class="h4">
+                    <a href="#" class="card-title">Joshua S Raju</a>
+                  </h3>
+
+                  <p class="card-tag">Lead Backend</p>
+                </div>
+
+                <a href="https://www.linkedin.com/in/joshua-raju-775494256/" class="btn-icon" aria-label="See more">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                    <path d="M0 10H41" stroke="black" stroke-width="2" />
+                    <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                  </svg>
+                </a>
+
+                </div>
+                <div class="portfolio-card" data-reveal>
+
+                  <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1091;">
+                    <img src="./assets/amrit.jpg" width="700" height="1091" loading="lazy" alt="Wedding Shot"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a href="#" class="card-title">Amritanshu</a>
+                    </h3>
+
+                    <p class="card-tag">Lead Docker Engg</p>
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/amritanshu-tripathy-91546b253/" class="btn-icon" aria-label="See more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                    </svg>
+                  </a>
+
+                </div>
+                <div class="portfolio-card" data-reveal>
+
+                  <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1091;">
+                    <img src="./assets/aditya.jpg" width="700" height="1091" loading="lazy" alt="Wedding Shot"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a href="#" class="card-title">Aditya Rana</a>
+                    </h3>
+
+                    <p class="card-tag">Backend Engineer</p>
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/aditya-rana-9a81b0235/" class="btn-icon" aria-label="See more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                    </svg>
+                  </a>
+
+                </div>
+
+              </div>
+
+              <div class="wrapper">
+
+                <div class="portfolio-card" data-reveal>
+
+                  <figure class="card-banner img-holder has-before" style="--width: 700; --height: 1000;">
+                    <img src="./assets/vilasini.jpg" width="700" height="1000" loading="lazy" alt="Fashion Show"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a href="#" class="card-title">Vilasisni Vijay</a>
+                    </h3>
+
+                    <p class="card-tag">Lead Frontend</p>
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/aditya-rana-9a81b0235/" class="btn-icon" aria-label="See more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                    </svg>
+                  </a>
+
+                </div>
+                <div class="portfolio-card" data-reveal>
+
+                  <figure class="card-banner img-holder has-before" style="--width: 700; --height: 850;">
+                    <img src="./assets/mukti.jpg" width="700" height="850" loading="lazy" alt="Jumbo Barger"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a href="#" class="card-title">Mukti Patangia</a>
+                    </h3>
+
+                    <p class="card-tag">UI/UX</p>
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/mukti-patangia-3bb11a248/" class="btn-icon" aria-label="See more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                    </svg>
+                  </a>
+
+                </div>
+                <div class="portfolio-card" data-reveal>
+
+                  <figure class="card-banner img-holder has-before" style="--width: 700; --height: 850;">
+                    <img src="./assets/olive.jpg" width="700" height="850" loading="lazy" alt="Jumbo Barger"
+                      class="img-cover">
+                  </figure>
+
+                  <div class="card-content">
+                    <h3 class="h4">
+                      <a href="#" class="card-title">Ayan Biswa Dutta</a>
+                    </h3>
+
+                    <p class="card-tag">Frontend/Team Manager</p>
+                  </div>
+
+                  <a href="https://www.linkedin.com/in/ayan-biswa-dutta-065370248/" class="btn-icon" aria-label="See more">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="20" viewBox="0 0 43 20" fill="none">
+                      <path d="M0 10H41" stroke="black" stroke-width="2" />
+                      <path d="M33 1L41.9 10.2727L33 19" stroke="black" stroke-width="2" />
+                    </svg>
+                  </a>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <img src="./assets/images/design.png" width="286" height="232" loading="lazy" alt="" class="shape">
+
+          </div>
+        </section>
+
+      </article>
+    </main>
+
+
+
+
+
+    <!-- 
+- #FOOTER
+-->
+
+    <footer class="footer">
+
+      <div class="footer-top section" id="contact">
+        <div class="container">
+
+          <p class="section-subtitle" data-reveal>Contact Us</p>
+
+          <h2 class="h2 section-title" data-reveal>
+            Reach out to us/Or join in for a drive 
+          </h2>
+
+          <a href="https://www.forms.google.com" class="btn-icon" data-reveal>
+            <img src="./assets/images/arrow-forward.svg" width="43" height="20" loading="lazy" alt="arrow-forward icon">
+          </a>
+
+          <!-- <img src="./assets/footer_image_1.png" width="159" height="176" loading="lazy" alt="photography"
+            class="abs-img abs-img-1" data-reveal>
+
+          <img src="./assets/footer_image_2.png" width="265" height="275" loading="lazy" alt="photography"
+            class="abs-img abs-img-2" data-reveal>
+
+          <img src="./assets/footer_image_3.png" width="303" height="272" loading="lazy" alt="photography"
+            class="abs-img abs-img-3" data-reveal>
+
+          <img src="./assets/footer_image_4.png" width="175" height="175" loading="lazy" alt="photography"
+            class="abs-img abs-img-4" data-reveal>
+
+          <img src="./assets/images/footer-shape.svg" width="185" height="134" loading="lazy" alt="" class="shape"> -->
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container">
+
+          <a href="#" class="logo">
+            <img src="./assets/DNT Logo Remastered White.png" width="160" height="160" loading="lazy" alt="Dnt home">
+          </a>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="https://www.linkedin.com/company class="social-link">ln.</a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/" class="social-link">Insta.</a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/" class="social-link">YT.</a>
+            </li>
+
+          </ul>
+
+          <p class="copyright">Make connections and grow and let grow</p>
+
+        </div>
+      </div>
+      <div class="footer-bg has-before">
+        <video autoplay muted loop class="img-cover">
+          <source src="./assets/bg.mp4" type="video/mp4">
+        </video>
+      </div>
+
+
+      <!-- <div class="footer-bg has-before">
+<img src="./assets/images/footer-bg.jpg" width="1920" height="1135" loading="lazy" alt="photography"
+class="img-cover">
+</div> -->
+
+    </footer>
+
+
+
+
+
+    <!-- 
+- #BACK TO TOP
+-->
+
+    <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>0%</a>
+
+
+
+
+
+    <!-- 
+- #CUSTOM CURSOR
+-->
+
+    <div class="cursor" data-cursor></div>
+
+
+
+
+
+    <!-- 
+- custom js link
+-->
+    <script src="./assets/js/script.js"></script>
+
+  </body>
+
+</html>
