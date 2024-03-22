@@ -1,7 +1,7 @@
 :root {
     --gray: #666666;    
     --shadow: rgba(0,0,0,0.2);
-    --body-bg-color: #ffe76e;
+    --body-bg-color: #fff2b3;
 }
 * {
     margin: 0;

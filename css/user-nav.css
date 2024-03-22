@@ -3,8 +3,8 @@
     /* font-family: 'Open Sans'; */
     --text-primary: #1a1a1a;
     --text-secondary: #ececec;
-    --bg-primary: #ffb97a;
-    --bg-secondary: #ec8c38;
+    --bg-primary: #ff8317;
+    --bg-secondary: #ff7700;
     --transition-speed: 600ms;
   }
   
@@ -23,7 +23,7 @@
   
   .navbar {
     position: fixed;
-    background-color: #ffb97a;
+    background-color: #ff973c;
     transition: width 0.3s ease;
   }
   
