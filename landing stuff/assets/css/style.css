@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rammetto+One&display=swap');
+
 :root {
 
   /**
    * colors
    */
-
+/* 
   --smokey-black: hsl(0, 0%, 7%);
   --eerie-black: hsl(0, 0%, 9%);
   --radical-red: hsl(346, 100%, 58%);
@@ -17,7 +19,24 @@
   --jet-1: hsl(0, 0%, 20%);
   --jet-2: hsl(0, 0%, 16%);
   --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%); */
+
+  --smokey-black: #fff1bf;
+  --eerie-black: #d45d5d;
+  --radical-red: hsl(346, 100%, 58%);
+  --white_a9: hsla(0, 0%, 100%, 0.09);
+  --white_a15: hsla(0, 0%, 100%, 0.15);
+  --white_a25: hsla(0, 0%, 100%, 0.25);
+  --white_a50: hsla(0, 0%, 100%, 0.5);
+  --white_a70: hsla(0, 0%, 100%, 0.7);
+  --white_a75: hsla(0, 0%, 100%, 0.75);
+  --white_a80: hsla(0, 0%, 100%, 0.8);
+  --jet-1: hsl(0, 0%, 20%);
+  --jet-2: hsl(0, 0%, 16%);
+  --white: #f37f32;
   --black: hsl(0, 0%, 0%);
+
+  --
 
   /**
    * gradient color
@@ -30,8 +49,8 @@
    * typography
    */
 
-  --ff-recoleta: "Recoleta", serif;
-  --ff-gordita: "Gordita", sans-serif;
+  --ff-recoleta: "Rammetto One";
+  --ff-gordita: "Poppins", sans-serif;
   
   --fs-1: 6rem;
   --fs-2: 5rem;
@@ -340,10 +359,10 @@ body.active { overflow: hidden; }
 .navbar {
   position: fixed;
   top: 0;
-  right: -280px;
+  /* right: -280px; */
   background-color: var(--eerie-black);
   height: 100vh;
-  max-width: 280px;
+  /* max-width: 180px; */
   width: 100%;
   padding: 25px;
   overflow-y: auto;
