@@ -32,17 +32,17 @@
             <form action="">
                 <div class="name">
                     <label for="fname">First Name</label>
-                    <input class="name" type="text" id="fname" name="fname">
+                    <input required class="name" type="text" id="fname" name="fname">
                     <label for="lname" style="margin-left: 2em;">Last Name</label>
-                    <input class="name" type="text" id="lname" name="lname">
+                    <input required class="name" type="text" id="lname" name="lname">
                     <br><br>
                 </div>
 
                 <label for="email">E-mail</label><br>
-                <input class="text" type="email" id="email" name="email">
+                <input required class="text" type="email" id="email" name="email">
                 <br>
                 <label for="phno">Phone Number</label><br>
-                <input class="text" type="tel" id="phno" name="phno">
+                <input required class="text" type="tel" id="phno" name="phno">
                 
                 <p>Location</p>
                 <div class="select_option"> 
@@ -58,7 +58,7 @@
                 </div>
                 <br>
                 <label for="pincode">Pincode</label>
-                <input class="text" type="number" name="pincode" pattern="{6}">
+                <input required class="text" type="number" name="pincode" pattern="{6}">
                 <br>
 
 
@@ -68,12 +68,12 @@
 
                 <br><br><br>
                 <label for="password">Password</label><br>
-                <input class="text" type="password" id="password" name="password">
+                <input required class="text" type="password" id="password" name="password">
                 <br>
                 <label for="confirm">Confirm Password</label><br>
-                <input class="text" type="password" id="confirm" name="confirm">
+                <input required class="text" type="password" id="confirm" name="confirm">
                 <br>
-                <input class="button" type="submit">
+                <input required class="button" type="submit">
             </form>
             <div class="login-link">
                 <p>
