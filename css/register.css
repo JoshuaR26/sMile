@@ -1,24 +1,38 @@
 body {
-    background-color: red;
+    background-color: #FF735C;
 }
 .parent-container {
     display: flex;
     /* flex-wrap: wrap; */
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    background-color: #FF735C;
 
 }
 .register-image {
-    background-color: beige;
-    
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5em;
+    margin: 3em auto;
+    max-height: 60em;
+}
+.register-image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
 }
 .register-container {
-    background-color: white;
+    color: #fff;
+    /* background-color: white; */
     padding: 3em;
     /* height: 100vh; */
     width: auto;
 }
 .register-container h1{
+    color: black;
     font-size: 3em;
     margin: 1em 0;
 }
@@ -33,16 +47,19 @@ body {
 }
 .register-container .name input {
     border-style: none;
-    border-bottom: solid .1em black;
+    background-color: transparent;
+    /* border-radius: 1em; */
+    border-bottom: solid .1em #ffffff83;
     padding: 0.5em;
     /* margin-right: 2em; */
 }
 .register-container input {
+    background-color: transparent;
     margin-bottom: 2em;
 }
 .register-container input.text{
     border-style: none;
-    border-bottom: solid .1em black;
+    border-bottom: solid .1em #ffffff89;
     padding: 0.5em;
     width: 100%;
 }
@@ -55,5 +72,35 @@ body {
 }
 .login-link a {
     text-decoration: none;
-    color: blue;
+    color: black;
+    font-weight: 600;
 }
+.button {
+    background-color: #ecebeb !important;
+}
+.button:hover {
+    background-color: #ffded8 !important;
+
+}
+@media screen and (max-width:900px) {
+    .body {
+        background-color: #FF735C;
+    }
+    .register-image {
+        display:none;
+    }
+    .register-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .register-container .name {
+        flex-wrap: wrap;
+    }
+};
+@media screen and (max-width: 1024px) {
+    .register-image {
+        display:none;
+    }
+};
+    
