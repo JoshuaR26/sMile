@@ -1,0 +1,30 @@
+.parent-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    justify-content: space-evenly;
+
+}
+.login-image {
+    background-color: beige;
+    
+}
+.login-container {
+    background-color: white;
+    padding: 3em;
+    height: 100vh;
+    width: auto;
+}
+.login-container h1{
+    font-size: 3em;
+    margin: 1em 0;
+}
+.login-container input.text{
+    border-style: none;
+    border-bottom: solid .1em black;
+    padding: 0.5em;
+    width: 100%;
+}
+.login-container input:focus {
+    outline: none;
+}
