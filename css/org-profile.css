@@ -1,0 +1,118 @@
+:root {
+    --gray: #666666;    
+    --shadow: rgba(0,0,0,0.2);
+    --body-bg-color: #fff5d4;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--body-bg-color);
+    font-size: large;
+}
+.welcome-mssg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 2em;
+    animation: load-container 0.5s ease 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+.welcome-mssg p {
+    font-weight: 600;
+}
+#statbar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0.5em;
+}
+#statbar img {
+    height: 10em;
+}
+.stat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.stat h3 {
+    font-size: 2em;
+    font-family: 'Poppins';
+}
+.parent-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0.5em;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    padding: 2em;
+    border-radius: 1em;
+    border-style: none;
+    box-shadow: 0 0 0.5em var(--shadow);
+    background-color: white;
+    animation: load-container 0.5s ease-in-out;
+    /* height: 100%; */
+}
+.column-1 {
+    flex: 2;
+    /* background-color: aqua; */
+}
+.column-2 {
+    flex: 1;
+    /* height: auto; */
+}
+.column-1 #personal-info li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#personal-info ul li {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field, .data {
+    margin: 0.5em 1em; /* Remove default margins */
+}
+.field {
+    text-transform: lowercase;
+    font-weight: 700;
+}
+.data {
+    color: var(--gray);
+    cursor:default;
+    text-transform: lowercase;
+    color: #ff9100;
+    /* position: absolute; */
+    /* width: auto; */
+}
+i {
+    margin-left: 1em;
+    cursor: pointer;
+    transition: 0.1s;
+}
+i:hover {
+    color: #ff9100;
+    font-size: 1.1em;
+}
+
+
+@media screen and (max-width:456px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+    * {
+        font-size:medium;
+    }
+}
