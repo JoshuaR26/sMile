@@ -3,9 +3,9 @@
     /* font-family: 'Open Sans'; */
     --text-primary: #1a1a1a;
     --text-secondary: #ececec;
-    --bg-primary: #ff8317;
-    --bg-secondary: #ff7700;
-    --transition-speed: 600ms;
+    --bg-primary: #FF735C;
+    --bg-secondary: #FF735C;
+    --transition-speed: 0.3s;
   }
   
   /* body {
@@ -23,9 +23,10 @@
   
   .navbar {
     position: fixed;
-    background-color: #ff973c;
-        
-    transition: width 0.3s ease;
+    background-color: #FF735C;
+    box-shadow: 0 0 1em rgba(0,0,0,0.2);
+    transition: 0.3s ease;
+    /* opacity: 0.5; */
   }
   
   .navbar-nav {

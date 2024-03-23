@@ -1,7 +1,7 @@
 :root {
     --gray: #666666;    
     --shadow: rgba(0,0,0,0.2);
-    --body-bg-color: #fff2b3;
+    --body-bg-color: #ffdad4;
 }
 * {
     margin: 0;
@@ -9,6 +9,7 @@
 }
 body {
     background-color: var(--body-bg-color);
+    font-size: large;
 }
 .welcome-mssg {
     display: flex;
@@ -22,13 +23,13 @@ body {
 }
 #statbar {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-evenly;
     margin: 0.5em;
 }
-/* img.stat-img {
-    height: 20em;
-} */
+#statbar img {
+    height: 10em;
+}
 .stat {
     display: flex;
     flex-direction: column;
@@ -86,6 +87,7 @@ body {
     color: var(--gray);
     cursor:default;
     text-transform: lowercase;
+    color: #ff4a2e;
     /* position: absolute; */
     /* width: auto; */
 }
@@ -95,6 +97,6 @@ i {
     transition: 0.1s;
 }
 i:hover {
-    color: blue;
+    color: #FF735C;
     font-size: 1.1em;
 }
