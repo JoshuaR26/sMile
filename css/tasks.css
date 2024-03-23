@@ -170,8 +170,8 @@ i{
 }
   /* Small screens */
 @media only screen and (max-width: 600px) {
-  .main {
-    margin-bottom: 100em;
+  main {
+    margin-bottom: 15em;
     padding: 0;
   }
   body {
@@ -278,8 +278,11 @@ i{
 
   /* Large screens */
   @media only screen and (min-width: 600px) {
+    main {
+      margin-bottom: 5em;
+    }
     .navbar {
-      top: 0;
+      /* top: 0; */
       width: 5rem;
       height: 100vh;
     }

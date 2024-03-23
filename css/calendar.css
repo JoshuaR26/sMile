@@ -1,7 +1,7 @@
 :root {
-    --body-bg-color: #fff2b3;
-    --bg-primary: #ff8317;
-    --bg-secondary: #ff7700;
+    --body-bg-color: #ffdad4;
+    --bg-primary: #FF735C;
+    --bg-secondary: #FF735C;
     --shadow: rgba(0,0,0,0.2);
 }
 
@@ -35,6 +35,7 @@ img {
     flex-wrap: wrap;
     justify-content: space-evenly;
     border-radius: 10px;
+    animation: load-container 0.5s ease-in-out;
   }
 
 
@@ -45,7 +46,19 @@ img {
     margin: 0;
     padding: 10px 0;
   }
-
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    padding: 2em;
+    border-radius: 1em;
+    border-style: none;
+    box-shadow: 0 0 0.5em var(--shadow);
+    background-color: white;
+    animation: load-container 0.5s ease-in-out;
+    /* height: 100%; */
+}
 
   #event-section input[type="date"],
   #event-section input[type="text"] {
@@ -258,4 +271,11 @@ img {
     border: 1px solid #bfc5c5;
     border-radius: 3px;
     padding: 5px 1em;
+  }
+
+  @media screen and (max-width:580px) {
+    main{
+      margin-bottom: 3em;
+    }
+    
   }

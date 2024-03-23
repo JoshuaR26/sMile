@@ -3,7 +3,7 @@
 * {
     font-family: 'Raleway';
 }
-h1, .button{
+h1, .button, img{
     font-family: 'Poppins' !important;
     font-weight: 600;
     animation: load-container 0.5s ease-in-out 0.5s;
