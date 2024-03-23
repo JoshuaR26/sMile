@@ -1,0 +1,52 @@
+# [[./frontend/src/components/logo2.png]]
+
+#+TITLE: Smile - Helping Communities go Miles
+#+AUTHOR: Amritanshu Tripathy
+
+* Introduction
+
+sMILE is a community based platform made by 6 innovators who look to connect local volunteers with community organizations features unque features like user profiles, a robust matching algorithm, search and filter capabilities, communication and project management tools, along with a feedback and reputation system.
+
+Our innovative web platform, sMILES, serves as a dynamic hub connecting local volunteers with community organizations, facilitating impactful engagement and collaboration. Built using cutting-edge technologies including PHP, HTML, CSS, and JavaScript, sMILES offers a seamless user experience with its intuitive interface, enhanced responsiveness, and modern design elements.
+
+* Table of Contents
+
+- [[#features][Features]]
+- [[#installation][Installation]]
+- [[#usage][Usage]]
+  - [[#nearest-hospital-finder][Nearest Hospital Finder]]
+  - [[#medical-report-decipher][Medical Report Decipher]]
+  - [[#community-page][Community Page]]
+  - [[#general-information][General Information]]
+  - [[#ai-bot][AI Bot]]
+- [[#external-links][External Links]]
+- [[#contributing][Contributing]]
+- [[#license][License]]
+
+* Features
+** User Profiles and Onboarding Process:
+sMILES streamlines the user journey with a smooth onboarding process, allowing individuals to easily create detailed profiles highlighting their skills, interests, and availability. Through personalized profiles, volunteers can showcase their passion for community service, fostering meaningful connections with organizations seeking their support.
+
+** Robust Matching Algorithm:
+Powered by a robust matching algorithm, sMILES intelligently pairs volunteers with relevant community organizations and projects based on compatibility factors such as location, skills, and preferences. This algorithm ensures that volunteers are matched with opportunities that align closely with their interests and expertise, maximizing their impact and satisfaction.
+
+** Search and Filter Capabilities:
+Our platform offers comprehensive search and filter capabilities, enabling users to efficiently discover volunteer opportunities tailored to their specific criteria. Volunteers can easily browse through a diverse range of projects, filtering by location, cause area, time commitment, and more, to find the perfect match for their interests and schedule.
+
+** Communication and Project Management Tools:
+sMILES facilitates seamless communication and collaboration between volunteers and organizations through integrated project management tools. Volunteers can engage in real-time discussions, coordinate logistics, and track their progress within a centralized platform, streamlining the volunteer experience and enhancing productivity.
+
+** Feedback and Reputation System:
+To uphold accountability and foster trust within the community, sMILES incorporates a robust feedback and reputation system. Volunteers and organizations can provide ratings and reviews based on their interactions, ensuring transparency and recognition for outstanding contributions. This system encourages continuous improvement and reinforces positive behaviors, enhancing the overall quality of engagement on the platform.
+* Usage
+** Creating Personalized Profiles:
+Users start by creating personalized profiles, detailing their skills, interests, and availability. Through an intuitive interface, they input relevant information to showcase their passion for community service and to ensure accurate matching with volunteer opportunities.
+
+** Exploring and Applying for Volunteer Opportunities:
+Once profiles are set up, users can browse through a variety of volunteer opportunities listed on the platform. They can filter and search based on criteria such as location, cause area, and time commitment. After finding suitable projects, users can easily apply or express interest directly through the platform.
+
+** Engaging in Communication and Collaboration:
+Upon acceptance into volunteer projects, users engage in seamless communication and collaboration with the respective organizations. They can participate in discussions, receive task assignments, and share updates within dedicated project spaces. This fosters effective teamwork and ensures that all stakeholders are aligned towards achieving common goals.
+* License
+
+MedAI is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.

@@ -7,16 +7,29 @@
     --bg-secondary: #ec8c38;
     --transition-speed: 600ms;
   }
-  
+  .welcome-mssg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 2em;
+    animation: load-container 0.5s ease 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+.welcome-mssg p {
+    font-weight: 600;
+}
   body {
     color: #1a1a1a;
-    background-color: #ffeed5;
+    background-color: #ffdad4;
     margin: 0;
     padding: 0;
   }
   main {
     margin-left: 5rem;
-    background-color: #ffeed5;
+    background-color: #ffdad4;
     height:100%;
     width:calc(100% - 110px);
     margin-left: auto;
@@ -88,7 +101,7 @@
   .fa-secondary {
     transition: var(--transition-speed);
   }
-  
+
   .logo {
     font-weight: bold;
     text-transform: uppercase;
@@ -117,7 +130,41 @@
   .navbar:hover .logo svg {
     transform: rotate(-180deg);
   }
-  
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    padding: 2em;
+    border-radius: 1em;
+    border-style: none;
+    box-shadow: 0 0 0.5em var(--shadow);
+    background-color: white;
+    animation: load-container 0.5s ease-in-out;
+    /* height: 100%; */
+}
+.button {
+  background-color: #FF735C;
+  margin: 1em 0em;
+  width: 60%;
+  /* margin-right: -10em; */
+}
+.button:hover {
+  background-color: #ef473a;
+}
+.content {
+  flex:1;
+}
+.column-2 {
+  flex: 1;
+  height: 100vh;
+}
+.column-2 img {
+  width: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
   /* Small screens */
   @media only screen and (max-width: 600px) {
     .navbar {
@@ -228,7 +275,7 @@
 .content{
     width:100%;
     margin-left: 4%;
-    overflow-y: auto;
+    /* overflow-y: auto; */
     padding-bottom: 60px; /* Adjust according to navbar height */
     height:calc(100vh-60px);
 }
@@ -405,10 +452,10 @@ button{
 }
 
 body {
-    scrollbar-width: none; 
+    /* scrollbar-width: none;  */
   }
-  
+/*   
   body::-webkit-scrollbar {
     display: none;
-  }
+  } */
   
