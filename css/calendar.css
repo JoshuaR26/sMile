@@ -59,6 +59,10 @@ img {
     animation: load-container 0.5s ease-in-out;
     /* height: 100%; */
 }
+.logo-img {
+  width: 100px; /* Adjust this value as needed */
+  height: auto; /* Maintain aspect ratio */
+}
 
   #event-section input[type="date"],
   #event-section input[type="text"] {
@@ -180,7 +184,7 @@ img {
     cursor: pointer;
     margin-left: 10px;
     /* align-items: right; */
-  } */
+   
 
   /* Buttons in the calendar */
   .button-container-calendar button {

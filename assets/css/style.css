@@ -383,7 +383,7 @@ body.active { overflow: hidden; }
 
 .navbar {
   position: fixed;
-  top: -6;
+  top: 0;
   /* right: -280px; */
   background-color: #FF735C;
   height: 100vh;
