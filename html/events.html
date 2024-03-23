@@ -11,7 +11,15 @@
       rel="stylesheet"
     />
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    
+
+    <!-- ? CSS CUSTOM SHEETS -->
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/animation.css">
+
+    <link rel="stylesheet" href="../css/events.css">
+    <link rel="stylesheet" href="../css/mini-calender.css">
+    <link rel="stylesheet" href="../css/user-nav.css">
   </head>
   
   <body>
@@ -19,7 +27,7 @@
       <ul class="navbar-nav">
         <li class="logo">
           <a href="#" class="nav-link">
-            <span class="link-text logo-text">unityhub</span>
+            <span class="link-text logo-text">sMile</span>
             <svg
               aria-hidden="true"
               focusable="false"
@@ -47,37 +55,37 @@
         </li>
   
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="../index.html" class="nav-link">
                 <i class="fa fa-home" style="font-size:36px"></i>
             <span class="link-text">Home</span>
           </a>
         </li>
   
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="./user-profile.html" class="nav-link">
             <i class="fa fa-user-circle-o" style="font-size:36px"></i>
             <span class="link-text">Profile</span>
           </a>
         </li>
   
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="./events.html" class="nav-link">
             <i class="fa fa-globe" style="font-size:36px"></i>
-            <span class="link-text">Organization</span>
+            <span class="link-text">Events</span>
           </a>
         </li>
   
         <li class="nav-item">
-          <a href="#" class="nav-link">
+          <a href="./tasks.html" class="nav-link">
             <i class="fa fa-sliders" style="font-size:36px"></i>
             <span class="link-text">Tasks</span>
           </a>
         </li>
   
         <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="fa fa-money" style="font-size:36px"></i>
-              <span class="link-text">Payments</span>
+            <a href="./calender.html" class="nav-link">
+              <i class="fa fa-calendar" style="font-size:36px"></i>
+              <span class="link-text">Calendar</span>
             </a>
           </li>        
         <li class="nav-item">
@@ -88,8 +96,9 @@
         </li>
       </ul>
     </nav>
-  <main>
 
+  <main>
+ 
     <div class="screen">
         <div class="content">
             <section class="search-bar" id="search">
@@ -107,9 +116,16 @@
                 </div>
                 <br>
               </section>
+              <div class="welcome-mssg">
+                <h1 style="font-weight: 300;">
+                    Volunteer to make people smile, 
+                    <span style="color: #ff5439; font-size: 1.5em;"><strong>joshua S RAJU</strong></span>
+                    !
+                </h1>
+            </div>
             <div class="left">
             <div class="cards">
-            <div class="card">
+            <div class="container">
               <div class="card__body">
                 <span class="tag tag-blue">Food</span>
                 <h4>Food Drive</h4>
@@ -123,21 +139,21 @@
               <div class="card__footer">
                 <div class="user">
                   <div class="user__info">
-                    <h5>Org name</h5>
+                    <h5>Biswa Trust</h5>
                     <small>2h ago</small>
                   </div>
                 </div>
                 <div class='buttons'>
-                  <button type='button' class="register">
+                  <button type='button' class="button">
                     Register
                   </button>
-                  <button type='button' class="p1">
+                  <button type='button' class="button">
                     Know More
                   </button>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="container">
               <div class="card__body">
                 <span class="tag tag-brown">Fund</span>
                 <h4>Fund Raiser</h4>
@@ -151,21 +167,21 @@
               <div class="card__footer">
                 <div class="user">
                   <div class="user__info">
-                    <h5>Org name</h5>
+                    <h5>Prayas Foundation</h5>
                     <small>2d ago</small>
                   </div>
                 </div>
                 <div class='buttons'>
-                  <button type='button' class="register">
+                  <button type='button' class="button">
                     Register
                   </button>
-                  <button type='button' class="p1">
+                  <button type='button' class="button">
                     Know More
                   </button>
                 </div>
               </div>
             </div>
-            <div class="card">
+            <div class="container">
               <div class="card__body">
                 <span class="tag tag-red">green</span>
                 <h4>Green run</h4>
@@ -179,15 +195,15 @@
               <div class="card__footer">
                 <div class="user">
                   <div class="user__info">
-                    <h5>Org name</h5>
+                    <h5></h5>
                     <small>3h ago</small>
                   </div>
                 </div>
                 <div class='buttons'>
-                  <button type='button' class="register">
+                  <button type='button' class="button">
                     Register
                   </button>
-                  <button type='button' class="p1">
+                  <button type='button' class="button">
                     Know More
                   </button>
                 </div>
@@ -196,83 +212,59 @@
         </div>
           </div>
         </div>
-          <div class="right"></div>
-
-    </div>
-  </main>
-  <script>
-    const searchForm = document.getElementById('form1');
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-searchForm.addEventListener('submit', function(event) {
-    event.preventDefault(); 
-
-    const searchTerm = searchInput.value.trim().toLowerCase();
-
-    if (searchTerm.length === 0) {
-        searchResults.innerHTML = '';
-        return;
-    }
-    searchResults.style.display = 'block';
-
-    const results = [
-        { name: 'Food Drive', oname: 'Organiser', time: '2h ago', date: '23/03/2023', tag: 'blue', place: 'Chennai'},
-        { name: 'Fund Raiser',oname: 'Organiser', time: '2d ago', date: '10/03/2023', tag:'brown',place: 'Bangalore'},
-        { name: 'Green Run',oname: 'Organiser', time: '3h ago', date: '1/04/2023',tag: 'red', place: 'Vellore'}
-    ];
-
-    const filteredResults = results.filter(result => result.name.toLowerCase().includes(searchTerm));
-
-    if (filteredResults.length > 0) {
-        const html = filteredResults.map(result => `
-            <div class="search-results">
-                <div class="card">
-              <div class="card__body">
-                <span class="tag tag-${result.tag}">Food</span>
-                <h4>${result.name}</h4>
-                <p><i class='far fa-calendar-alt' style='font-size:16px'></i>
-                    ${result.date} </p>
-                <p><i class="fa fa-map-pin" style="font-size:16px"></i>
-                    ${result.place} </p>
-              </div>
-              <div class="card__footer">
-                <div class="user">
-                  <div class="user__info">
-                    <h5>${result.oname}</h5>
-                    <small>${result.time}</small>
+        <div class="column-2" id="column-2">
+          <div class="container">
+            <img src="../images/teach-comm.jpg">
+              <h2>Calendar</h2>
+              <div class="container-calendar">
+                  <div id="right">
+                    <h3 id="monthAndYear"></h3>
+                    <div class="button-container-calendar">
+                      <button id="previous"
+                        onclick="previous()">
+                        ‹
+                      </button>
+                      <button id="next"
+                        onclick="next()">
+                        ›
+                      </button>
+                    </div>
+                    <table class="table-calendar"
+                      id="calendar"
+                      data-lang="en">
+                      <thead id="thead-month"></thead>
+                      <!-- Table body for displaying the calendar -->
+                      <tbody id="calendar-body"></tbody>
+                    </table>
+                    <div class="footer-container-calendar">
+                      <label for="month">Jump To: </label>
+                      <!-- Dropdowns to select a specific month and year -->
+                      <select id="month" onchange="jump()">
+                        <option value=0>Jan</option>
+                        <option value=1>Feb</option>
+                        <option value=2>Mar</option>
+                        <option value=3>Apr</option>
+                        <option value=4>May</option>
+                        <option value=5>Jun</option>
+                        <option value=6>Jul</option>
+                        <option value=7>Aug</option>
+                        <option value=8>Sep</option>
+                        <option value=9>Oct</option>
+                        <option value=10>Nov</option>
+                        <option value=11>Dec</option>
+                      </select>
+                      <!-- Dropdown to select a specific year -->
+                      <select id="year" onchange="jump()"></select>
+                    </div>
                   </div>
                 </div>
-                <div class='buttons'>
-                  <button type='button' class="register" >
-                    Register
-                  </button>
-                  <button type='button' class="p1">
-                    Know More
-                  </button>
-                </div>
-              </div>
-            </div>
-            </div>
-        `).join('');
-        searchResults.innerHTML = html;
-    } else {
-        searchResults.innerHTML = 'No results found';
-    }
-});
-
-var buttons = document.querySelectorAll(".register");
-
-buttons.forEach(function(button) {
-  button.addEventListener("click", function() {
-    alert("Registered!!");
-  });
-});
-
-var x = document.querySelector(".cross-btn");
-x.addEventListener("click", function () {
-    var y=document.getElementById('search-results');
-    y.style.display="none";
-});
-  </script>
+          </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </main>
+  <script src="../js/events.js"></script>
+  <script src="../js/miniCalendar.js"></script>
+  <script src="../js/userNavTheme.js"></script>
   </body>
   </html>
