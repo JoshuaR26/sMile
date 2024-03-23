@@ -6,6 +6,9 @@
 h1, .button{
     font-family: 'Poppins' !important;
     font-weight: 600;
+    animation: load-container 0.5s ease-in-out 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 h2 {
     font-family: 'Poppins' !important;
