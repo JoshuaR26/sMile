@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>Feedback Form</title>
     <style>
+
+    
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0.5em;
+    padding: 2em;
+    border-radius: 1em;
+    border-style: none;
+    box-shadow: 0 0 0.5em var(--shadow);
+    background-color: white;
+    animation: load-container 0.5s ease-in-out;
+    /* height: 100%; */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: black;
@@ -76,16 +92,16 @@ a:hover {
 }
     </style>
 </head>
-<body>
+<body style="background-color: red;">
 
-    <form action="../php/insert.php" method="post">
-    <h1>Feedback Form</h1>
-        <label for="name">Name:</label>
+    <form action="../php/insert.php" method="post" class="container">
+    <h1 style="color: black;">Feedback Form</h1>
+        <label for="name" style="color: black;">Name:</label>
         <input type="text" id="name" name="name" required>
-        <label name="issue" for="subject">Subject:</label>
+        <label name="issue" for="subject" style="color: black;">Subject:</label>
         <input name="issue" type="text" id="issue">
         
-        <label for="feedback">Feedback:</label>
+        <label for="feedback" style="color: black;">Feedback:</label>
         <textarea id="feedback" name="feedback" required></textarea>
         
         <div class="star-rating">
@@ -103,6 +119,5 @@ a:hover {
         
         <input type="submit" value="Submit">
     </form>
-    <a href="responses.php" style="color: black;">View Responses</a>
 </body>
 </html>
