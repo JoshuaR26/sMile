@@ -3,8 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Feedback Form</title>
+
+    <main>
+      
     <style>
 
+main{
+  height: 100%;
+  width: calc(100%-110px);
+  margin-left: auto;
+}
     
 .container {
     display: flex;
@@ -91,20 +99,25 @@ a:hover {
     color: #ffc107;
 }
     </style>
-</head>
-<body style="background-color: red;">
 
-    <form action="../php/insert.php" method="post" class="container">
-    <h1 style="color: black;">Feedback Form</h1>
-        <label for="name" style="color: black;">Name:</label>
-        <input type="text" id="name" name="name" required>
-        <label name="issue" for="subject" style="color: black;">Subject:</label>
-        <input name="issue" type="text" id="issue">
-        
-        <label for="feedback" style="color: black;">Feedback:</label>
-        <textarea id="feedback" name="feedback" required></textarea>
-        
-        <div class="star-rating">
+
+    </main>
+  </head>
+  <body style="background-color:#ffdad4; "> 
+    <main>
+      <div>
+
+        <form action="../php/insert.php" method="post" class="container">
+          <h1 style="color: black;">Feedback Form</h1>
+          <label for="name" style="color: black;">Name:</label>
+          <input type="text" id="name" name="name" required>
+          <label name="issue" for="subject" style="color: black;">Subject:</label>
+          <input name="issue" type="text" id="issue">
+
+          <label for="feedback" style="color: black;">Feedback:</label>
+          <textarea id="feedback" name="feedback" required></textarea>
+
+          <div class="star-rating">
             <input type="radio" id="star1" name="rating" value="1">
             <label for="star1">★</label>
             <input type="radio" id="star2" name="rating" value="2">
@@ -115,9 +128,14 @@ a:hover {
             <label for="star4">★</label>
             <input type="radio" id="star5" name="rating" value="5">
             <label for="star5">★</label>
-        </div>
-        
-        <input type="submit" value="Submit">
-    </form>
-</body>
+          </div>
+
+          <input type="submit" value="Submit">
+        </form>
+
+      </div>
+
+
+    </main>
+  </body>
 </html>
