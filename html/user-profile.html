@@ -166,73 +166,77 @@
                         <h2 style="display: flex; justify-content: space-between; align-items: center;">
                             About Yourself
                             <i class="fa fa-pencil"></i>
-                        </h2>
-                    </span>
-                    <!-- <textarea maxlength="100"></textarea> -->
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam minima molestias soluta voluptatibus iure? Molestias, corporis suscipit eum sed beatae, facilis eveniet impedit quas culpa reiciendis voluptatum. Officia, quidem suscipit!
-                        <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eum blanditiis perspiciatis consectetur pariatur ipsam. Perspiciatis quaerat suscipit ab officiis, porro alias maiores saepe perferendis et, nemo dolores tempora ducimus.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="column-2" id="column-2">
-                <div class="container">
-                    <h2>Calendar</h2>
-                    <div class="container-calendar">
-                        <div id="right">
-                          <h3 id="monthAndYear"></h3>
-                          <div class="button-container-calendar">
-                            <button id="previous"
-                              onclick="previous()">
-                              ‹
-                            </button>
-                            <button id="next"
-                              onclick="next()">
-                              ›
-                            </button>
-                          </div>
-                          <table class="table-calendar"
-                            id="calendar"
-                            data-lang="en">
-                            <thead id="thead-month"></thead>
-                            <!-- Table body for displaying the calendar -->
-                            <tbody id="calendar-body"></tbody>
-                          </table>
-                          <div class="footer-container-calendar">
-                            <label for="month">Jump To: </label>
-                            <!-- Dropdowns to select a specific month and year -->
-                            <select id="month" onchange="jump()">
-                              <option value=0>Jan</option>
-                              <option value=1>Feb</option>
-                              <option value=2>Mar</option>
-                              <option value=3>Apr</option>
-                              <option value=4>May</option>
-                              <option value=5>Jun</option>
-                              <option value=6>Jul</option>
-                              <option value=7>Aug</option>
-                              <option value=8>Sep</option>
-                              <option value=9>Oct</option>
-                              <option value=10>Nov</option>
-                              <option value=11>Dec</option>
-                            </select>
-                            <!-- Dropdown to select a specific year -->
-                            <select id="year" onchange="jump()"></select>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
+              </h2>
+            </span>
+            <!-- <textarea maxlength="100"></textarea> -->
+            <p>
+              Hi there! I'm Joshua, a passionate individual pursuing my second year of BTech in the AI/ML branch. As both a frontend developer and an AI/ML engineer, I thrive on the dynamic intersection of technology and creativity.
+              <br><br>
+                By day, you'll find me delving into the intricacies of AI algorithms and exploring the endless possibilities of machine learning. Whether I'm coding in Python, experimenting with neural networks, or tinkering with datasets, I'm constantly seeking to push the boundaries of what's possible in the world of artificial intelligence.
+              <br><br>
+                But when the coding window closes, I love to unwind and let my creativity flow freely. Whether it's through sketching, painting, or diving into digital art, I find solace in expressing myself through various forms of artistic expression. You might even catch me spending hours crafting a model over Jupyter, turning raw data into something visually captivating and insightful - after all, who said data science can't be an art form?
+              <br><br>
+                In essence, I'm a curious soul with a penchant for innovation and a deep appreciation for both the technical and the creative. I'm always eager to learn, explore, and embrace new challenges, both in the world of technology and beyond. So, if you're ever up for a chat about AI, frontend development, or the latest art trends, feel free to reach out - I'm always open to new connections and exciting opportunities!
+            </p>
+          </div>
         </div>
-        <div class="container">
 
-            <h2>Settings</h2>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit vero quibusdam provident. Voluptates blanditiis est deserunt quia officiis error quasi, rem inventore laboriosam aperiam tempora accusantium, ipsam magni rerum natus!</p>
+        <div class="column-2" id="column-2">
+          <div class="container">
+            <h2>Calendar</h2>
+            <div class="container-calendar">
+              <div id="right">
+                <h3 id="monthAndYear"></h3>
+                <div class="button-container-calendar">
+                  <button id="previous"
+                    onclick="previous()">
+                    ‹
+                  </button>
+                  <button id="next"
+                    onclick="next()">
+                    ›
+                  </button>
+                </div>
+                <table class="table-calendar"
+                  id="calendar"
+                  data-lang="en">
+                  <thead id="thead-month"></thead>
+                  <!-- Table body for displaying the calendar -->
+                  <tbody id="calendar-body"></tbody>
+                </table>
+                <div class="footer-container-calendar">
+                  <label for="month">Jump To: </label>
+                  <!-- Dropdowns to select a specific month and year -->
+                  <select id="month" onchange="jump()">
+                    <option value=0>Jan</option>
+                    <option value=1>Feb</option>
+                    <option value=2>Mar</option>
+                    <option value=3>Apr</option>
+                    <option value=4>May</option>
+                    <option value=5>Jun</option>
+                    <option value=6>Jul</option>
+                    <option value=7>Aug</option>
+                    <option value=8>Sep</option>
+                    <option value=9>Oct</option>
+                    <option value=10>Nov</option>
+                    <option value=11>Dec</option>
+                  </select>
+                  <!-- Dropdown to select a specific year -->
+                  <select id="year" onchange="jump()"></select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </main>
+      </div>
+      <div class="container">
+
+        <h2>Settings</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit vero quibusdam provident. Voluptates blanditiis est deserunt quia officiis error quasi, rem inventore laboriosam aperiam tempora accusantium, ipsam magni rerum natus!</p>
+      </div>
+    </main>
 
     <script src="../js/miniCalendar.js"></script>
     <script src="../js/userNavTheme.js"></script>
-</body>
+  </body>
 </html>
