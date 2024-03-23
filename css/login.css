@@ -1,30 +1,111 @@
+body {
+    background-color: #FF735C;
+}
 .parent-container {
     display: flex;
     /* flex-wrap: wrap; */
     margin: auto;
     justify-content: space-evenly;
+    background-color: #FF735C;
 
 }
 .login-image {
-    background-color: beige;
-    
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5em;
+    margin: auto 5em;
+    max-height: 100em;
+    /* margin: 0em; */
+}
+.login-image img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40em;
+    border-radius: 5em;
 }
 .login-container {
-    background-color: white;
-    padding: 3em;
-    height: 100vh;
-    width: auto;
+    color: #fff;
+    /* background-color: white; */
+    margin: 10em;
+    /* height: 100vh; */
+    width: 80%;
 }
 .login-container h1{
+    color: black;
     font-size: 3em;
     margin: 1em 0;
 }
+.login-container .name {
+    display: flex;
+}
+.login-container .name label {
+    display: inline-flex; 
+    position: relative;
+    margin-right: 0.5em;
+    top:1em;
+}
+.login-container .name input {
+    border-style: none;
+    background-color: transparent;
+    /* border-radius: 1em; */
+    border-bottom: solid .1em #ffffff83;
+    padding: 0.5em;
+    /* margin-right: 2em; */
+}
+.login-container input {
+    background-color: transparent;
+    margin-bottom: 2em;
+}
 .login-container input.text{
     border-style: none;
-    border-bottom: solid .1em black;
+    border-bottom: solid .1em #ffffff89;
     padding: 0.5em;
     width: 100%;
 }
 .login-container input:focus {
     outline: none;
 }
+.register-link {
+    margin: 1em;
+    text-align: center;
+}
+.register-link a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+.button {
+    background-color: #ecebeb !important;
+}
+.button:hover {
+    background-color: #ffded8 !important;
+
+}
+
+@media screen and (max-width:900px) {
+    .body {
+        background-color: #FF735C;
+    }
+    .login-image {
+        display:none;
+    }
+    .login-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        margin: 3em;
+    }
+    .login-container .name {
+        flex-wrap: wrap;
+    }
+};
+@media screen and (max-width: 1024px) {
+    .login-image {
+        display:none;
+    }
+};
+    

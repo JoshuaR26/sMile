@@ -5,7 +5,7 @@ body {
     display: flex;
     /* flex-wrap: wrap; */
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #FF735C;
 
 }
