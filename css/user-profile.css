@@ -17,6 +17,9 @@ body {
     align-items: center;
     /* width: 100%; */
     padding: 2em;
+    animation: load-container 0.5s ease 0.5s;
+    animation-fill-mode: forwards;
+    opacity: 0;
 }
 .welcome-mssg p {
     font-weight: 600;
@@ -24,6 +27,7 @@ body {
 #statbar {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin: 0.5em;
 }
@@ -55,6 +59,7 @@ body {
     border-style: none;
     box-shadow: 0 0 0.5em var(--shadow);
     background-color: white;
+    animation: load-container 0.5s ease-in-out;
     /* height: 100%; */
 }
 .column-1 {
@@ -99,4 +104,25 @@ i {
 i:hover {
     color: #FF735C;
     font-size: 1.1em;
+}
+
+@keyframes load-container {
+    0% {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    
+}
+@media screen and (max-width:456px) {
+    body {
+        display: flex;
+        align-items: center;
+    }
+    * {
+        font-size:medium;
+    }
 }
