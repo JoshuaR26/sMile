@@ -4,13 +4,28 @@
     <link rel="shortcut icon" href="../assets/DNT-Logo-Remastered-White.svg" type="image/svg+xml">
 
     <script defer src="/js/userNavTheme.js"></script>
-    <link rel="stylesheet" href="/css/feedback.css" />
+    <link rel="stylesheet" href="../css/feedback.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- ? CSS CUSTOM SHEETS -->
+    <link rel="stylesheet" href="../css/button.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="../css/animation.css">
+
+    <!-- <link rel="stylesheet" href="../css/user-profile.css"> -->
+    <link rel="stylesheet" href="../css/mini-calender.css">
+    <link rel="stylesheet" href="../css/user-nav.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap"
+      rel="stylesheet"/>
+
 <style>
 
 </style>
@@ -92,8 +107,8 @@
     </nav>
   
     <main>
-      <h1 style="color: black;">Feedback Form</h1>
       <div class="cont">
+        <h1 style="color: black;">Feedback Form</h1>
       <form action="../php/insert.php" method="post" class="container">
           <label for="name" style="color: black;">Name:</label>
           <input type="text" id="name" name="name" required>
@@ -116,10 +131,24 @@
             <label for="star5">★</label>
           </div>
 
-          <input type="submit" value="Submit">
+          <input class="button" type="submit" value="Submit">
         </form>
       </div>
     </main>
+    <style>
+      /* .container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0.5em;
+  /* padding: 1em; */
+  border-radius: 1em;
+  border-style: none;
+  box-shadow: 0 0 0.5em var(--shadow);
+  background-color: white;
+  animation: load-container 0.5s ease-in-out;
+} */
+    </style>
   </body>
   </html>
     
