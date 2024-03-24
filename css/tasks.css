@@ -571,6 +571,7 @@ i{
       margin-bottom: 1em;
       overflow: hidden;
       clear: both;
+      cursor: pointer;
     }
   
     #previous {
